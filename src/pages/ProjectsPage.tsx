@@ -81,7 +81,7 @@ export default function ProjectsPage() {
                       </div>
                       
                       <div className="p-8 md:p-10 flex flex-col grow">
-                        <span className="text-brand-sky text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block">
+                        <span className="text-brand-coral text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block">
                           {project.category}
                         </span>
                         <h3 className="text-xl md:text-2xl text-white font-bold mb-4 tracking-tight leading-tight group-hover:text-brand-sky transition-colors duration-300">
@@ -90,7 +90,7 @@ export default function ProjectsPage() {
                         <p className="text-gray-400 text-sm font-light leading-relaxed mb-8 grow">
                           {project.description}
                         </p>
-                        <div className="flex items-center text-brand-sky text-[10px] font-bold uppercase tracking-widest group/btn border-t border-white/5 pt-6 mt-auto">
+                        <div className="flex items-center text-brand-coral text-[10px] font-bold uppercase tracking-widest group/btn border-t border-white/5 pt-6 mt-auto">
                           View Project Details 
                           <ArrowRight className="ml-3 w-4 h-4 transition-transform group-hover/btn:translate-x-2" />
                         </div>
@@ -136,7 +136,7 @@ export default function ProjectsPage() {
 
                 {/* Content Section */}
                 <div className="space-y-4 mb-8 pr-12">
-                  <span className="text-brand-sky text-xs font-bold uppercase tracking-[0.4em] block">
+                  <span className="text-brand-coral text-xs font-bold uppercase tracking-[0.4em] block">
                     {selectedProject.category}
                   </span>
                   <h2 className="text-2xl sm:text-3xl md:text-4xl text-white font-serif uppercase tracking-tight leading-tight">
@@ -193,7 +193,7 @@ export default function ProjectsPage() {
 
                 {/* Content Section */}
                 <div className="p-8 md:p-12 overflow-y-auto flex-1 flex flex-col justify-center space-y-4">
-                  <span className="text-brand-sky text-xs font-bold uppercase tracking-[0.4em] block">
+                  <span className="text-brand-coral text-xs font-bold uppercase tracking-[0.4em] block">
                     {selectedProject.category}
                   </span>
                   <h2 className="text-2xl sm:text-3xl md:text-4xl text-white font-serif uppercase tracking-tight leading-tight">
