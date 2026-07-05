@@ -111,7 +111,7 @@ export default function HomePage() {
                     <h3 className="text-xs sm:text-xl md:text-2xl text-white group-hover:translate-x-2 transition-transform duration-500 uppercase tracking-tighter font-serif italic line-clamp-2 sm:line-clamp-none">{service.title}</h3>
                     <p className="text-gray-500 text-[9px] sm:text-[10px] md:text-sm leading-relaxed font-light line-clamp-2 md:line-clamp-none">{service.tagline}</p>
                   </div>
-                  <div className="flex items-center gap-2 sm:gap-3 text-brand-sky text-[8px] md:text-[9px] font-bold uppercase tracking-[0.3em] pt-2 sm:pt-4 md:pt-8 whitespace-nowrap">
+                  <div className="flex items-center gap-2 sm:gap-3 text-brand-coral text-[8px] md:text-[9px] font-bold uppercase tracking-[0.3em] pt-2 sm:pt-4 md:pt-8 whitespace-nowrap">
                     DETAILS <ArrowRight className="w-2 h-2 sm:w-3 sm:h-3 transition-transform group-hover:translate-x-2" />
                   </div>
                 </Link>
@@ -204,7 +204,7 @@ export default function HomePage() {
                   <p className="text-gray-500 text-sm font-light leading-relaxed mb-10 line-clamp-2 grow">
                     {project.description}
                   </p>
-                  <div className="flex items-center text-brand-sky text-[10px] font-bold uppercase tracking-widest group/btn border-t border-white/5 pt-8 mt-auto">
+                  <div className="flex items-center text-brand-coral hover:text-brand-coral/80 transition-colors text-[10px] font-bold uppercase tracking-widest group/btn border-t border-white/5 pt-8 mt-auto">
                     VIEW CASE STUDY 
                     <ArrowRight className="ml-4 w-4 h-4 transition-transform group-hover/btn:translate-x-3" />
                   </div>
@@ -370,7 +370,7 @@ export default function HomePage() {
 
                 {/* Content Section */}
                 <div className="space-y-4 mb-8 pr-12">
-                  <span className="text-brand-sky text-xs font-bold uppercase tracking-[0.4em] block">
+                  <span className="text-brand-coral text-xs font-bold uppercase tracking-[0.4em] block">
                     {selectedProject.category}
                   </span>
                   <h2 className="text-2xl sm:text-3xl md:text-4xl text-white font-serif uppercase tracking-tight leading-tight">
@@ -407,7 +407,7 @@ export default function HomePage() {
                 {/* Close Button */}
                 <button
                   onClick={() => setSelectedProject(null)}
-                  className="absolute top-4 right-4 z-35 bg-brand-dark-navy/80 hover:bg-brand-coral border border-white/10 hover:border-transparent text-white p-2.5 transition-all outline-none cursor-pointer"
+                  className="absolute top-4 right-4 z-50 bg-brand-dark-navy/80 hover:bg-brand-coral border border-white/10 hover:border-transparent text-white p-2.5 transition-all outline-none cursor-pointer"
                   aria-label="Close details"
                 >
                   <X className="w-5 h-5" />
@@ -415,8 +415,8 @@ export default function HomePage() {
 
                 {/* Image Section */}
                 <div className="relative overflow-hidden aspect-[16/10] md:aspect-auto md:w-1/2 bg-black/20 flex-shrink-0">
-                  <img
-                    src={selectedProject.image}
+                  <img 
+                    src={selectedProject.image} 
                     alt={selectedProject.title}
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
