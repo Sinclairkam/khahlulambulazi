@@ -56,17 +56,19 @@ export default function App() {
       >
         <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
           <Link to="/" className="flex items-center gap-4 group shrink-0">
-            <img 
-              src="https://i.postimg.cc/Dy0sn8gw/Khahlua-logo.jpg" 
-              alt="KM Logo" 
-              className="w-10 h-10 object-cover transition-transform group-hover:scale-105 shrink-0" 
-              referrerPolicy="no-referrer"
-            />
+            <div className="w-10 h-10 relative flex items-center justify-center shrink-0">
+              <img 
+                src="https://i.postimg.cc/Dy0sn8gw/Khahlua-logo.jpg" 
+                alt="KM Logo" 
+                className="absolute w-14 h-14 max-w-none object-cover transition-transform group-hover:scale-105" 
+                referrerPolicy="no-referrer"
+              />
+            </div>
             <div className="flex flex-col leading-none">
               <span className="text-sm font-bold tracking-tighter uppercase text-white">
                 KHAHLULA MBULAZI
               </span>
-              <span className="text-[10px] uppercase tracking-[0.2em] font-medium text-brand-sky">
+              <span className="text-[10px] uppercase tracking-[0.2em] font-medium text-brand-coral">
                 (Private) Limited
               </span>
             </div>
@@ -93,7 +95,7 @@ export default function App() {
           </nav>
 
           <Link to="/contact" className="hidden lg:block shrink-0">
-            <Button variant="outline" className="border-brand-sky text-brand-sky hover:bg-brand-sky hover:text-white rounded-none px-6 py-2 text-[10px] uppercase tracking-widest transition-all">
+            <Button className="bg-brand-coral border border-brand-coral hover:bg-brand-coral/95 text-white rounded-none px-6 py-2 text-[10px] uppercase tracking-widest transition-all">
               REQUEST QUOTE
             </Button>
           </Link>
