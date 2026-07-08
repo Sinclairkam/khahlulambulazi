@@ -208,7 +208,7 @@ export default function ContactPage() {
                 </div>
                 <div className="space-y-4">
                   <span className="font-bold flex items-center text-sm text-white uppercase tracking-widest"><MapPin className="w-4 h-4 mr-3 text-brand-coral" /> Bulawayo Office</span>
-                  <p className="text-gray-500 text-base md:text-lg font-light leading-relaxed">222 Leopold Takawira Avenue, Bulawayo</p>
+                  <p className="text-gray-500 text-base md:text-lg font-light leading-relaxed">Corner 6th Avenue and Jason Moyo Camperdome house No. 67</p>
                 </div>
               </div>
 
