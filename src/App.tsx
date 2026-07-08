@@ -54,28 +54,24 @@ export default function App() {
           scrolled ? 'bg-brand-dark-navy/90 backdrop-blur-md py-4 border-b border-white/10' : 'bg-brand-navy/80 backdrop-blur-sm py-6 border-b border-white/5'
         }`}
       >
-        <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
+        <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-4 group shrink-0">
             <div className="w-10 h-10 relative flex items-center justify-center shrink-0">
               <img 
-                src="https://i.postimg.cc/Dy0sn8gw/Khahlua-logo.jpg" 
+                src="https://i.8upload.com/image/a56f4291eda83d18/whatsapp-image-2026-07-07-at-20-37-40.jpg" 
                 alt="KM Logo" 
                 className="absolute w-14 h-14 max-w-none object-cover transition-transform group-hover:scale-105" 
                 referrerPolicy="no-referrer"
               />
             </div>
             <div className="flex flex-col leading-none">
-              <span className="text-sm font-bold tracking-tighter uppercase text-white">
-                KHAHLULA MBULAZI
-              </span>
-              <span className="text-[10px] uppercase tracking-[0.2em] font-medium text-brand-coral">
-                (Private) Limited
-              </span>
+              <span className="text-white text-base md:text-lg font-bold tracking-tighter uppercase whitespace-nowrap">KHAHLULA MBULAZI</span>
+              <span className="text-brand-sky text-[10px] uppercase tracking-[0.25em] font-medium">(Pvt) Ltd</span>
             </div>
           </Link>
 
-          {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center space-x-10">
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-12">
             {ROUTES.map((route) => {
               const isActive = route.path.includes('#')
                 ? (location.pathname + location.hash) === route.path
@@ -84,8 +80,8 @@ export default function App() {
                 <Link 
                   key={route.path} 
                   to={route.path}
-                  className={`text-[11px] font-semibold uppercase tracking-[0.25em] transition-colors hover:text-brand-sky py-2 ${
-                    isActive ? 'text-brand-sky underline underline-offset-8 decoration-1' : 'text-white/80'
+                  className={`text-[11px] font-bold uppercase tracking-[0.2em] transition-colors ${
+                    isActive ? 'text-brand-sky italic' : 'text-gray-300 hover:text-white'
                   }`}
                 >
                   {route.name}
@@ -94,9 +90,9 @@ export default function App() {
             })}
           </nav>
 
-          <Link to="/contact" className="hidden lg:block shrink-0">
-            <Button className="bg-brand-coral border border-brand-coral hover:bg-brand-coral/95 text-white rounded-none px-6 py-2 text-[10px] uppercase tracking-widest transition-all">
-              REQUEST QUOTE
+          <Link to="/contact" className="hidden lg:block">
+            <Button className="bg-brand-sky hover:bg-white text-white hover:text-brand-navy rounded-none px-8 py-6 font-bold uppercase tracking-widest text-[11px] transition-all">
+              REQUEST PROPOSAL
             </Button>
           </Link>
 
@@ -197,7 +193,7 @@ export default function App() {
           <div className="space-y-8">
             <div className="flex items-center gap-4">
             <img 
-              src="https://i.postimg.cc/Dy0sn8gw/Khahlua-logo.jpg" 
+              src="https://i.8upload.com/image/a56f4291eda83d18/whatsapp-image-2026-07-07-at-20-37-40.jpg" 
               alt="KM Logo" 
               className="w-12 h-12 object-cover" 
               referrerPolicy="no-referrer"
