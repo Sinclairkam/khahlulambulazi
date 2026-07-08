@@ -118,7 +118,7 @@ export default function Hero({
                 <Link to={thirdCtaLink || '/contact'} className="flex-1 sm:flex-none">
                   <Button 
                     size="lg" 
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-[12px] px-4 py-2.5 sm:px-5 sm:py-3 text-xs sm:text-sm font-bold uppercase tracking-wider sm:tracking-widest transition-all border border-transparent"
+                    className="w-full bg-brand-coral hover:bg-brand-coral/90 text-white rounded-[12px] px-4 py-2.5 sm:px-5 sm:py-3 text-xs sm:text-sm font-bold uppercase tracking-wider sm:tracking-widest transition-all border border-transparent"
                   >
                     {thirdCtaText}
                   </Button>
