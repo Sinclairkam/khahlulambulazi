@@ -54,7 +54,7 @@ export default function App() {
           scrolled ? 'bg-brand-dark-navy/90 backdrop-blur-md py-4 border-b border-white/10' : 'bg-brand-navy/80 backdrop-blur-sm py-6 border-b border-white/5'
         }`}
       >
-        <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
+        <div className="container mx-auto px-6 md:px-12 flex justify-between items-center gap-4">
           <Link to="/" className="flex items-center gap-4 group shrink-0">
             <div className="w-10 h-10 relative flex items-center justify-center shrink-0">
               <img 
@@ -65,13 +65,17 @@ export default function App() {
               />
             </div>
             <div className="flex flex-col leading-none">
-              <span className="text-white text-base md:text-lg font-bold tracking-tighter uppercase whitespace-nowrap">KHAHLULA MBULAZI</span>
-              <span className="text-brand-sky text-[10px] uppercase tracking-[0.25em] font-medium">(Pvt) Ltd</span>
+              <span className="text-sm font-bold tracking-tighter uppercase text-white">
+                KHAHLULA MBULAZI
+              </span>
+              <span className="text-[10px] uppercase tracking-[0.2em] font-medium text-brand-coral">
+                (Private) Limited
+              </span>
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-12">
+          {/* Desktop Nav */}
+          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-10 ml-8 xl:ml-16 mr-auto">
             {ROUTES.map((route) => {
               const isActive = route.path.includes('#')
                 ? (location.pathname + location.hash) === route.path
@@ -80,8 +84,8 @@ export default function App() {
                 <Link 
                   key={route.path} 
                   to={route.path}
-                  className={`text-[11px] font-bold uppercase tracking-[0.2em] transition-colors ${
-                    isActive ? 'text-brand-sky italic' : 'text-gray-300 hover:text-white'
+                  className={`text-[11px] font-semibold uppercase tracking-[0.25em] transition-colors hover:text-brand-sky py-2 ${
+                    isActive ? 'text-brand-sky underline underline-offset-8 decoration-1' : 'text-white/80'
                   }`}
                 >
                   {route.name}
@@ -90,9 +94,9 @@ export default function App() {
             })}
           </nav>
 
-          <Link to="/contact" className="hidden lg:block">
-            <Button className="bg-brand-sky hover:bg-white text-white hover:text-brand-navy rounded-none px-8 py-6 font-bold uppercase tracking-widest text-[11px] transition-all">
-              REQUEST PROPOSAL
+          <Link to="/contact" className="hidden lg:block shrink-0">
+            <Button className="bg-brand-coral border border-brand-coral hover:bg-brand-coral/95 text-white rounded-none px-6 py-2 text-[10px] uppercase tracking-widest transition-all">
+              REQUEST QUOTE
             </Button>
           </Link>
 
@@ -154,9 +158,9 @@ export default function App() {
                     {CONTACT_INFO.email}
                   </div>
                 </div>
-                <Link to="/contact">
-                  <Button className="w-full bg-brand-sky hover:bg-white text-white hover:text-brand-navy rounded-none py-10 text-[12px] font-bold uppercase tracking-[0.3em] transition-all">
-                    REQUEST PROPOSAL
+                <Link to="/contact" className="block w-full">
+                  <Button className="w-full bg-brand-coral hover:bg-brand-coral/90 text-white rounded-none py-3 text-[12px] font-bold uppercase tracking-[0.3em] transition-all">
+                    REQUEST QUOTE
                   </Button>
                 </Link>
               </div>
@@ -200,7 +204,7 @@ export default function App() {
             />
               <div className="flex flex-col leading-none">
                 <span className="text-xl font-bold tracking-tighter uppercase">KHAHLULA MBULAZI</span>
-                <span className="text-[12px] uppercase tracking-[0.2em] text-brand-sky font-medium">(Pvt) Ltd</span>
+                <span className="text-[12px] uppercase tracking-[0.2em] text-brand-coral font-medium">(Private) Limited</span>
               </div>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed max-w-xs font-light italic">
