@@ -490,9 +490,9 @@ export const LOCATIONS = {
     mapUrl: 'https://maps.google.com/maps?q=Century+House+East,+38+Nelson+Mandela+Avenue,+Causeway,+Harare,+Zimbabwe&t=&z=16&ie=UTF8&iwloc=&output=embed'
   },
   bulawayo: {
-    address: '222 Leopold Takawira Avenue\nBulawayo, Zimbabwe',
+    address: 'Corner 6th Avenue and Jason Moyo Camperdome house No. 67',
     phone: '+263 71 987 6543',
     hours: 'Mon-Fri: 8:00 AM - 5:00 PM',
-    mapUrl: 'https://maps.google.com/maps?q=222+Leopold+Takawira+Avenue,+Bulawayo,+Zimbabwe&t=&z=16&ie=UTF8&iwloc=&output=embed'
+    mapUrl: 'https://maps.google.com/maps?q=Corner+6th+Avenue+and+Jason+Moyo+Camperdome+house+No.+67,+Bulawayo,+Zimbabwe&t=&z=16&ie=UTF8&iwloc=&output=embed'
   }
 };
