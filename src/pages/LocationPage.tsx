@@ -37,7 +37,7 @@ export default function LocationPage() {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="text-gray-300 text-base md:text-lg font-light leading-relaxed max-w-2xl mx-auto"
             >
-              Conveniently located in the hearts of Zimbabwe's major business hubs: Harare and Bulawayo.
+              Conveniently located in Bulawayo, Zimbabwe.
             </motion.p>
           </div>
         </div>
@@ -49,63 +49,11 @@ export default function LocationPage() {
 
       <section className="py-20 md:py-32 container mx-auto px-6 md:px-12">
         <div className="space-y-20 md:space-y-32">
-          {/* Harare */}
+          {/* Bulawayo HQ */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
-            <div className="space-y-8 md:space-y-12">
+             <div className="space-y-8 md:space-y-12">
               <div className="space-y-4">
-                <span className="text-brand-coral font-bold uppercase tracking-[0.3em] text-[10px] block">Northern Region HQ</span>
-                <h2 className="text-4xl md:text-6xl text-[#F3F4F6] uppercase tracking-tighter">Harare Office</h2>
-                <div className="h-1 w-20 md:w-24 bg-brand-coral" />
-              </div>
-
-              <div className="space-y-6 md:space-y-8">
-                <div className="flex items-start space-x-4 md:space-x-6 pb-6 md:pb-8 border-b border-white/5">
-                  <MapPin className="w-5 h-5 md:w-6 md:h-6 text-brand-coral mt-1" />
-                  <div>
-                    <span className="text-gray-500 uppercase tracking-widest text-[9px] md:text-[10px] font-bold block mb-2">Address</span>
-                    <span className="text-lg md:text-xl text-white font-light whitespace-pre-line">{LOCATIONS.harare.address}</span>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4 md:space-x-6 pb-6 md:pb-8 border-b border-white/5">
-                  <Phone className="w-5 h-5 md:w-6 md:h-6 text-brand-coral mt-1" />
-                  <div>
-                    <span className="text-gray-500 uppercase tracking-widest text-[9px] md:text-[10px] font-bold block mb-2">Direct Line</span>
-                    <span className="text-lg md:text-xl text-white font-light">{LOCATIONS.harare.phone}</span>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4 md:space-x-6">
-                  <Clock className="w-5 h-5 md:w-6 md:h-6 text-brand-coral mt-1" />
-                  <div>
-                    <span className="text-gray-500 uppercase tracking-widest text-[9px] md:text-[10px] font-bold block mb-2">Business Hours</span>
-                    <span className="text-lg md:text-xl text-white font-light">{LOCATIONS.harare.hours}</span>
-                  </div>
-                </div>
-              </div>
-
-              <Button className="w-full sm:w-auto bg-brand-sky hover:bg-white text-white hover:text-brand-navy rounded-none px-10 py-8 font-bold uppercase tracking-widest text-[11px] transition-all">
-                <Navigation2 className="mr-2 w-4 h-4" /> Get Directions
-              </Button>
-            </div>
-            <div className="h-[300px] sm:h-[400px] md:h-[600px] w-full bg-brand-dark-navy border border-white/5 overflow-hidden">
-               <iframe 
-                 src={LOCATIONS.harare.mapUrl}
-                 width="100%" 
-                 height="100%" 
-                 style={{ border: 0 }} 
-                 allowFullScreen 
-                 loading="lazy" 
-                 referrerPolicy="no-referrer-when-downgrade"
-               />
-            </div>
-          </div>
-
-          {/* Bulawayo */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
-             <div className="lg:order-2 space-y-8 md:space-y-12">
-              <div className="space-y-4">
-                <span className="text-brand-coral font-bold uppercase tracking-[0.3em] text-[10px] block">Southern Region HQ</span>
+                <span className="text-brand-coral font-bold uppercase tracking-[0.3em] text-[10px] block">Main Head Office</span>
                 <h2 className="text-4xl md:text-6xl text-[#F3F4F6] uppercase tracking-tighter">Bulawayo Office</h2>
                 <div className="h-1 w-20 md:w-24 bg-brand-coral" />
               </div>
@@ -136,11 +84,18 @@ export default function LocationPage() {
                 </div>
               </div>
 
-              <Button className="w-full sm:w-auto bg-brand-sky hover:bg-white text-white hover:text-brand-navy rounded-none px-10 py-8 font-bold uppercase tracking-widest text-[11px] transition-all">
-                <Navigation2 className="mr-2 w-4 h-4" /> Get Directions
-              </Button>
+              <a 
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(LOCATIONS.bulawayo.address)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block w-full sm:w-auto"
+              >
+                <Button className="w-full sm:w-auto bg-brand-sky hover:bg-white text-white hover:text-brand-navy rounded-none px-10 py-8 font-bold uppercase tracking-widest text-[11px] transition-all">
+                  <Navigation2 className="mr-2 w-4 h-4" /> Get Directions
+                </Button>
+              </a>
             </div>
-            <div className="lg:order-1 h-[300px] sm:h-[400px] md:h-[600px] w-full bg-brand-dark-navy border border-white/5 overflow-hidden">
+            <div className="h-[300px] sm:h-[400px] md:h-[600px] w-full bg-brand-dark-navy border border-white/5 overflow-hidden">
                <iframe 
                  src={LOCATIONS.bulawayo.mapUrl}
                  width="100%" 
@@ -161,7 +116,7 @@ export default function LocationPage() {
           <div className="space-y-6 md:space-y-8">
             <h2 className="text-4xl md:text-6xl uppercase tracking-tighter">Full National Coverage</h2>
             <p className="text-gray-500 text-base md:text-lg leading-relaxed max-w-lg font-light">
-              While our major offices are in the capital and second city, KM Construction handles projects in Mashonaland, Matabeleland, Midlands, and Manicaland.
+              While our head office is located in Bulawayo, KM Construction handles civil, structural, and building projects nationwide across Matabeleland, Mashonaland, Midlands, and Manicaland.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8">
