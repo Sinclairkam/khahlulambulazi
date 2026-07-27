@@ -27,7 +27,7 @@ export const TAGLINE = "We build with pride.";
 export const CONTACT_INFO = {
   phones: ["+263 774 562 012", "073 417 6803", "068 089 2753"],
   email: "khahlulambulazi@gmail.com",
-  address: "Century House East, 38 Nelson Mandela Avenue, Causeway, Harare, Zimbabwe"
+  address: "Corner 6th Avenue and Jason Moyo Camperdome house No. 67, Bulawayo, Zimbabwe"
 };
 
 export const ROUTES = [
@@ -152,6 +152,14 @@ export const SERVICES = [
 ];
 
 export const PROJECTS = [
+  // --- COMMERCIAL & INDUSTRIAL ---
+  {
+    title: "Commercial Steel Portal Frame Erection",
+    category: "Commercial & Industrial",
+    image: "https://i.8upload.com/image/43228e063e5355d2/whatsapp-image-2026-07-19-at-20-36-32.jpg",
+    description: "Precision fabrication and structural assembly of a heavy-duty white steel portal frame warehouse with engineered roof purlins and concrete block perimeter walling."
+  },
+
   // --- RESIDENTIAL PROJECTS ---
   {
     title: "Structural Roof Truss Installation",
@@ -466,7 +474,7 @@ export const REVIEWS = [
     name: 'Tinashe Marowa',
     company: 'Capital Investments',
     rating: 5,
-    text: 'Khahlula Mbulazi delivered our office building ahead of schedule. Their attention to structural detail is unmatched in Harare.'
+    text: 'Khahlula Mbulazi delivered our office building ahead of schedule. Their attention to structural detail is unmatched in Bulawayo.'
   },
   {
     name: 'Sarah Moyo',
@@ -483,15 +491,9 @@ export const REVIEWS = [
 ];
 
 export const LOCATIONS = {
-  harare: {
-    address: 'Century House East\n38 Nelson Mandela Avenue, Causeway\nHarare, Zimbabwe',
-    phone: '+263 77 123 4567',
-    hours: 'Mon-Fri: 8:00 AM - 5:00 PM',
-    mapUrl: 'https://maps.google.com/maps?q=Century+House+East,+38+Nelson+Mandela+Avenue,+Causeway,+Harare,+Zimbabwe&t=&z=16&ie=UTF8&iwloc=&output=embed'
-  },
   bulawayo: {
     address: 'Corner 6th Avenue and Jason Moyo Camperdome house No. 67',
-    phone: '+263 71 987 6543',
+    phone: '+263 774 562 012',
     hours: 'Mon-Fri: 8:00 AM - 5:00 PM',
     mapUrl: 'https://maps.google.com/maps?q=Corner+6th+Avenue+and+Jason+Moyo+Camperdome+house+No.+67,+Bulawayo,+Zimbabwe&t=&z=16&ie=UTF8&iwloc=&output=embed'
   }
