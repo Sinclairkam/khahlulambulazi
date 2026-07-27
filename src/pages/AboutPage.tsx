@@ -61,7 +61,7 @@ export default function AboutPage() {
                   Founded with a singular vision to redefine the construction landscape in Zimbabwe, we combine superior engineering with unwavering professional ethics.
                 </p>
                 <p>
-                  Operating primarily out of Harare and Bulawayo, our reach extends across the nation, bringing world-class construction standards to every project we undertake—whether it's a luxury residential estate or complex civil infrastructure.
+                  Operating primarily out of Bulawayo, our reach extends across the nation, bringing world-class construction standards to every project we undertake—whether it's a luxury residential estate or complex civil infrastructure.
                 </p>
               </div>
             </div>
@@ -141,7 +141,7 @@ export default function AboutPage() {
           <div className="max-w-5xl mx-auto space-y-12 md:space-y-24 relative">
             <div className="absolute left-1/2 top-0 bottom-0 w-px bg-white/5 hidden md:block" />
             {[
-              { year: '2010', title: 'The Blueprint', desc: 'Registered in Harare as a specialist residential contractor.' },
+              { year: '2010', title: 'The Blueprint', desc: 'Registered as a specialist residential contractor.' },
               { year: '2014', title: 'Scaling Up', desc: 'Acquisition of heavy machinery and expansion into civil works.' },
               { year: '2018', title: 'Multi-City Presence', desc: 'Opened our Bulawayo headquarters to serve the southern region.' },
               { year: '2023', title: 'Structural Expansion & Housing Estates', desc: 'Successfully scaled up operations into large-scale structural steel framing and premium residential estate developments, solidifying our reputation for structural excellence.' }
