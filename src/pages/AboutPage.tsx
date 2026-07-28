@@ -61,7 +61,7 @@ export default function AboutPage() {
                   Founded with a singular vision to redefine the construction landscape in Zimbabwe, we combine superior engineering with unwavering professional ethics.
                 </p>
                 <p>
-                  Operating primarily out of Bulawayo, our reach extends across the nation, bringing world-class construction standards to every project we undertake—whether it's a luxury residential estate or complex civil infrastructure.
+                  Operating out of our Bulawayo headquarters, our reach extends across the nation, bringing world-class construction standards to every project we undertake—whether it's a luxury residential estate or complex civil infrastructure.
                 </p>
               </div>
             </div>
