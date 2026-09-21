@@ -1,20 +1,42 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Khahlula Mbulazi
 
-# Run and deploy your AI Studio app
+A modern, responsive web application for **Khahlula Mbulazi Private Limited**, built to showcase commercial & industrial structural engineering, construction projects, and specialized services based in Bulawayo, Zimbabwe.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/8dffc34d-8212-46eb-bd5c-4ee2d293da35
+## 🛠️ Tech Stack
 
-## Run Locally
+* **Frontend:** React, TypeScript, Vite
+* **Styling:** Tailwind CSS, Lucide Icons, Framer Motion
+* **Hosting & Deployment:** Firebase Hosting
+* **CI/CD Pipeline:** GitHub Actions
 
-**Prerequisites:**  Node.js
+---
 
+## ✨ Key Features
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+* **Interactive Portfolio Grid:** Showcases engineering projects (e.g., Commercial Steel Portal Frame Erection) with detailed specifications.
+* **Services Breakdown:** Clear overview of commercial, industrial, and structural construction capabilities.
+* **Responsive Layout:** Optimized for mobile, tablet, and desktop viewports.
+* **Customer Reviews & Testimonials:** Highlighting client feedback and proven industry experience.
+* **Location & Contact Details:** Integrated company address and inquiry details.
+
+---
+
+## 📁 Project Structure
+
+```text
+khahlulambulazi/
+├── .github/workflows/       # GitHub Actions CI/CD workflows
+├── public/                  # Static assets and favicon
+├── src/
+│   ├── components/          # Reusable UI components & section layouts
+│   │   └── sections/        # Page sections (Hero, About, Services, Reviews)
+│   ├── data/                # Data structures (projects, services, constants)
+│   ├── pages/               # Main page routes (HomePage, AboutPage, etc.)
+│   ├── App.tsx              # Application root & router configuration
+│   └── main.tsx             # Application entry point
+├── firebase.json            # Firebase Hosting configuration
+├── tailwind.config.js       # Tailwind CSS configuration
+├── tsconfig.json            # TypeScript configuration
+└── vite.config.ts           # Vite build tool configuration
